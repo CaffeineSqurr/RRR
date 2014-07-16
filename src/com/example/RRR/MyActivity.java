@@ -25,13 +25,14 @@ public class MyActivity extends Activity {
     private void initBar() {
         ProgressBar rProgress;
         rProgress = (ProgressBar) findViewById(R.id.rProgress);
-        rProgress.setVisibility(View.INVISIBLE);
+//        rProgress.setVisibility(View.INVISIBLE);
+        return;
     }
 
     private void loadBar() {
         ProgressBar rProgress;
         rProgress = (ProgressBar) findViewById(R.id.rProgress);
-        rProgress.setVisibility(View.VISIBLE);
+//        rProgress.setVisibility(View.VISIBLE);
         rProgress.setMax(100);
         int p = 0;
         while (p < 100){
@@ -39,13 +40,14 @@ public class MyActivity extends Activity {
             Log.i("RRR Dev", "incrementing progress");
 
             try {
-                Thread.sleep(100);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             p+=10;
         }
-        rProgress.setVisibility(View.INVISIBLE);
+//        rProgress.setVisibility(View.INVISIBLE);
+        return;
     }
 
     private void initButton() {
@@ -66,6 +68,7 @@ public class MyActivity extends Activity {
                 ).show();
             }
         });
+        return;
     }
 
 

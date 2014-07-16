@@ -13,7 +13,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="rrr dev" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="rrr" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
   </component>
   <component name="ChangeListManager">
@@ -114,11 +114,11 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/RRR/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="36" selection-start="813" selection-end="813" vertical-scroll-proportion="-0.19767442" vertical-offset="663" max-vertical-offset="1326">
+            <state line="21" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.59302324" vertical-offset="0" max-vertical-offset="1377">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1459#1838#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#1498#1877#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,6 +142,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -572,11 +575,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/RRR/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="36" selection-start="813" selection-end="813" vertical-scroll-proportion="-0.19767442" vertical-offset="663" max-vertical-offset="1326">
+        <state line="21" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.59302324" vertical-offset="0" max-vertical-offset="1377">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1459#1838#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1498#1877#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
           </folding>
         </state>
       </provider>
