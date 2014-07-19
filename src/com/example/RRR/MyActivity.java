@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import android.os.Handler;
+
 public class MyActivity extends Activity {
     /**
      * Called when the activity is first created.
@@ -29,23 +31,37 @@ public class MyActivity extends Activity {
         return;
     }
 
+    private static int p = 0;
+
+    private Handler handle = new Handler();
+
+    private ProgressBar rProgress;
+
     private void loadBar() {
-        ProgressBar rProgress;
         rProgress = (ProgressBar) findViewById(R.id.rProgress);
 //        rProgress.setVisibility(View.VISIBLE);
         rProgress.setMax(100);
-        int p = 0;
-        while (p < 100){
-            rProgress.setProgress(p);
-            Log.i("RRR Dev", "incrementing progress");
+	new Thread(new Runnable() {
+		public void run() {
+        	p = 0;
+        	while (p < 100){
+	    		handle.post(new Runnable() {
+				public void run() {
+            				rProgress.setProgress(p);
+				}
+	    		});
+            		Log.i("RRR Dev", "incrementing progress");
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            p+=10;
-        }
+            		try {
+				Thread.sleep(1000);	
+            		} catch (InterruptedException e) {
+                		e.printStackTrace();
+            		}
+            		p+=10;
+        	}
+        rProgress.setProgress(p);
+	Log.i("RRR Dev", "done incrementing progress");
+	}}).start();
 //        rProgress.setVisibility(View.INVISIBLE);
         return;
     }
